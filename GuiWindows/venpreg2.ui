@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1980</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>530</y>
-      <width>131</width>
-      <height>31</height>
+      <x>860</x>
+      <y>960</y>
+      <width>200</width>
+      <height>70</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -39,14 +39,14 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>441</width>
-      <height>31</height>
+      <x>70</x>
+      <y>190</y>
+      <width>861</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Evaluación global del paisaje sonoro</string>
@@ -55,14 +55,14 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>351</width>
-      <height>31</height>
+      <x>70</x>
+      <y>330</y>
+      <width>661</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>En general ¿Como evaluas el sonido escuchado? </string>
@@ -71,18 +71,18 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QRadioButton" name="R11">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>160</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -94,18 +94,18 @@ malo</string>
    <widget class="QRadioButton" name="R22">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>440</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -117,18 +117,18 @@ malo</string>
    <widget class="QRadioButton" name="R33">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>720</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -140,18 +140,18 @@ malo</string>
    <widget class="QRadioButton" name="R44">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1000</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -162,18 +162,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R55">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1280</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -185,18 +185,18 @@ bueno</string>
    <widget class="QRadioButton" name="R66">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>150</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1560</x>
+      <y>410</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>

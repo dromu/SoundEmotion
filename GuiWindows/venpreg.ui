@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>530</y>
-      <width>131</width>
-      <height>31</height>
+      <x>860</x>
+      <y>960</y>
+      <width>200</width>
+      <height>70</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -39,14 +39,14 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>0</y>
-      <width>351</width>
-      <height>31</height>
+      <x>40</x>
+      <y>10</y>
+      <width>621</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Dominancias de los sonidos</string>
@@ -55,14 +55,14 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>451</width>
+      <x>40</x>
+      <y>120</y>
+      <width>801</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>¿En que medida percibes las siguientes fuentes de sonido?</string>
@@ -71,14 +71,14 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>121</width>
+      <x>130</x>
+      <y>190</y>
+      <width>181</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Voces o música</string>
@@ -87,18 +87,18 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QRadioButton" name="R1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -110,18 +110,27 @@ completamente</string>
    <widget class="QRadioButton" name="R2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -129,22 +138,34 @@ background-color: rgb(170, 0, 0);
      <string>Relativamente 
 silencioso</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="R3">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -152,22 +173,34 @@ background-color: rgb(170, 0, 0);
      <string>Ligeramente 
 silencioso</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="R4">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -175,44 +208,68 @@ background-color: rgb(170, 0, 0);
      <string>Ligeramente 
 ruidoso</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="R5">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
      <string>Moderadamente</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="R6">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>100</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>230</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -220,22 +277,25 @@ background-color: rgb(170, 0, 0);
      <string>Relativamente 
 ruidoso</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="R2_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -247,14 +307,14 @@ silencioso</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>150</y>
-      <width>201</width>
-      <height>21</height>
+      <x>120</x>
+      <y>320</y>
+      <width>271</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Movimiento de personas</string>
@@ -263,18 +323,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R3_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -286,18 +346,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R6_2">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -309,18 +369,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R4_2">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -332,18 +392,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R5_2">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -354,18 +414,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R1_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>360</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -377,18 +437,18 @@ completamente</string>
    <widget class="QRadioButton" name="R2_3">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -400,14 +460,14 @@ silencioso</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>181</width>
-      <height>21</height>
+      <x>120</x>
+      <y>450</y>
+      <width>261</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Transporte motorizado</string>
@@ -416,18 +476,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R3_3">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -439,18 +499,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R6_3">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -462,18 +522,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R4_3">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -485,18 +545,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R5_3">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -507,18 +567,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R1_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>250</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>490</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -530,18 +590,18 @@ completamente</string>
    <widget class="QRadioButton" name="R2_4">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -553,14 +613,14 @@ silencioso</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>290</y>
-      <width>151</width>
+      <x>130</x>
+      <y>580</y>
+      <width>201</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Electromecánicos</string>
@@ -569,18 +629,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R3_4">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -592,18 +652,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R6_4">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -615,18 +675,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R4_4">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -638,18 +698,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R5_4">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -660,18 +720,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R1_4">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>320</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>610</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -683,18 +743,18 @@ completamente</string>
    <widget class="QRadioButton" name="R2_5">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -706,14 +766,14 @@ silencioso</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>370</y>
+      <x>130</x>
+      <y>700</y>
       <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Biofonía</string>
@@ -722,18 +782,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R3_5">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -745,18 +805,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R6_5">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -768,18 +828,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R4_5">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -791,18 +851,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R5_5">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -813,18 +873,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R1_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>390</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>730</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -836,18 +896,18 @@ completamente</string>
    <widget class="QRadioButton" name="R2_6">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>400</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -859,14 +919,14 @@ silencioso</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>430</y>
+      <x>130</x>
+      <y>820</y>
       <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Geofonías</string>
@@ -875,18 +935,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R3_6">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>680</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -898,18 +958,18 @@ silencioso</string>
    <widget class="QRadioButton" name="R6_6">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1520</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -921,18 +981,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R4_6">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1240</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -944,18 +1004,18 @@ ruidoso</string>
    <widget class="QRadioButton" name="R5_6">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>960</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>
@@ -966,18 +1026,18 @@ background-color: rgb(170, 0, 0);
    <widget class="QRadioButton" name="R1_6">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>460</y>
-      <width>120</width>
-      <height>40</height>
+      <x>120</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 5px;
+     <string notr="true">border-radius: 15px;
 text-align:center;
 selection-background-color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(170, 0, 0);
 </string>
     </property>

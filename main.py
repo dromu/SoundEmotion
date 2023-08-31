@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout,  QButtonGroup,QLabel,QVBoxLayout
+from PyQt5.QtCore import Qt
 import csv
 import matplotlib.pyplot as plt
 import unicodedata
@@ -8,7 +9,7 @@ import sys
 import time
 
 # Modificar esta variable que contiene el numero de ciclos
-total_sonidos = 2
+total_sonidos = 1
 
 cantidad_sonidos = 0
 #inciar la app
@@ -24,6 +25,7 @@ Wquestions2  = uic.loadUi(pathWindows + "venpreg2.ui")
 Wquestions3  = uic.loadUi(pathWindows + "venpreg3.ui")
 Wfinal       = uic.loadUi(pathWindows + "venfinal.ui")
 Wpruebfin    = uic.loadUi(pathWindows + "venfinprueba.ui")
+Winicio      = uic.loadUi(pathWindows + "veninicio.ui")
 
 # Agreganos en grupo las primeras respuestas 
 button_group1A = QButtonGroup()
@@ -78,45 +80,52 @@ for i in range(1,7):
         button.setChecked(False) 
 
 #Ventana de reproduccion del sonido
-def gui_sound():
+
+    
+
+def gui_inicio():
     global cantidad_sonidos
     global total_sonidos
 
-
-
     if cantidad_sonidos == total_sonidos:
         Wfinal.hide()
-        Wpruebfin.show()
-        Wpruebfin.showMaximized()
-        
+        # Wpruebfin.show()
+        Wpruebfin.showFullScreen()
 
     else:     
         Wfinal.hide()
-        Wsound.show()
+        Wsound.showFullScreen()
 
+def gui_sound():  
+    Winicio.hide()
+    Wsound.showFullScreen()
+     
+    
 def gui_emocion():
+     Winicio.hide()
      Wsound.hide()
-     Wemocion.show()
-     Wemocion.showMaximized()
+    #  Wemocion.show()
+    #  Wemocion.showMaximized()
+     Wemocion.showFullScreen()
     
 
 # Ventana de las primeras seis preguntas 
 def gui_questions():
     Wemocion.hide()
-    Wquestions.show()
-    Wquestions.showMaximized()
+    # Wquestions.show()
+    Wquestions.showFullScreen()
     # Wquestions.toolButton.setEnabled(False)
 
     
 #Ventana de la segunda
 def gui_questions2():
     Wquestions.hide()
-    Wquestions2.show()
+    Wquestions2.showFullScreen()
 
 # Ventana de la tercer pregunta
 def gui_questions3():
     Wquestions2.hide()
-    Wquestions3.show()
+    Wquestions3.showFullScreen()
 
 # Ventana de agradecimiento 
 def gui_final():
@@ -124,7 +133,7 @@ def gui_final():
     global total_sonidos
 
     Wquestions3.hide()
-    Wfinal.show()
+    Wfinal.showFullScreen()
     
     #Se verifican todas las respuestas y se guardan
 
@@ -227,13 +236,18 @@ def verQuestion3():
         gui_final()
 
 def to_csv( nuevos_datos):
-    with open("data.csv", 'a', newline='') as file:
+    with open("Output/data.csv", 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(nuevos_datos)
     
     print(f'Se han agregado los datos al archivo "data datacsv"')
 
+def cerrar():
+     sys.exit()
 
+
+# Boton siguiente "toolButton"
+Winicio.toolButton.clicked.connect(gui_inicio)        # me dirige a la primer pregunta
 
 # Boton siguiente "toolButton"
 Wsound.toolButton.clicked.connect(gui_emocion)        # me dirige a la primer pregunta
@@ -251,12 +265,14 @@ Wquestions2.toolButton.clicked.connect(verQuestion2)# dirige a la segunda pregun
 Wquestions3.toolButton.clicked.connect(verQuestion3)# dirige a la segunda pregunta
 
 # Al presionar el boton se devuelve a la pantalal de inicio 
-Wfinal.toolButton.clicked.connect(gui_sound)# incio
+Wfinal.toolButton.clicked.connect(gui_inicio)# incio
 
 # SE limpia todas las selecciones de la primer pregunta
 Wfinal.toolButton.clicked.connect(clear_selection)
 
+# PAra cerrar la prueba
+Wpruebfin.toolButton.clicked.connect(cerrar)
 
-Wsound.show()
-Wsound.showMaximized()
+Winicio.showFullScreen()
+
 app.exec()

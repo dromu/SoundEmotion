@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>530</y>
-      <width>131</width>
-      <height>31</height>
+      <x>860</x>
+      <y>960</y>
+      <width>200</width>
+      <height>70</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -36,36 +36,36 @@ background-color: rgb(170, 0, 0);</string>
      <string>Siguiente</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>160</y>
-      <width>331</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>G R A C I A S!!!</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>250</y>
-      <width>561</width>
-      <height>31</height>
+      <x>530</x>
+      <y>520</y>
+      <width>881</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Al dar click en siguiente, la prueba volvera a empezar con un sonido diferente</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>380</y>
+      <width>711</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Hemos terminado, toma un descanso</string>
     </property>
    </widget>
   </widget>
