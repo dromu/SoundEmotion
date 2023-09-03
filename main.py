@@ -7,25 +7,35 @@ import unicodedata
 from PyQt5.QtGui import QPixmap
 import sys
 import time
+from emojigrid import CoordinateApp
+from PlaySound import MusicPlayer
+from PyQt5.QtMultimedia import QSound
+from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
+from PyQt5.QtCore import QUrl
 
 # Modificar esta variable que contiene el numero de ciclos
-total_sonidos = 1
+total_sonidos = 2
 
 cantidad_sonidos = 0
 #inciar la app
 
+EndSound = False
+
 app = QtWidgets.QApplication([])
 
-pathWindows = "GuiWindows/"
 
-Wsound      = uic.loadUi(pathWindows + "venSonido.ui")
-Wemocion    = uic.loadUi(pathWindows + "venemoc.ui")
+pathWindows = "GuiWindows/"
+Winicio      = uic.loadUi(pathWindows + "veninicio.ui")
+# Wsound      = uic.loadUi(pathWindows + "venSonido.ui")
+Wsound      = uic.loadUi(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\PlaySound\Reproductor.ui")
+# Wemocion    = uic.loadUi(pathWindows + "venemoc.ui")
+Wemocion    = uic.loadUi(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\emojigrid\Emojigrid.ui")
 Wquestions  = uic.loadUi(pathWindows + "venpreg.ui")
 Wquestions2  = uic.loadUi(pathWindows + "venpreg2.ui")
 Wquestions3  = uic.loadUi(pathWindows + "venpreg3.ui")
 Wfinal       = uic.loadUi(pathWindows + "venfinal.ui")
 Wpruebfin    = uic.loadUi(pathWindows + "venfinprueba.ui")
-Winicio      = uic.loadUi(pathWindows + "veninicio.ui")
+
 
 # Agreganos en grupo las primeras respuestas 
 button_group1A = QButtonGroup()
@@ -89,26 +99,29 @@ def gui_inicio():
 
     if cantidad_sonidos == total_sonidos:
         Wfinal.hide()
-        # Wpruebfin.show()
         Wpruebfin.showFullScreen()
 
     else:     
         Wfinal.hide()
         Wsound.showFullScreen()
+        
 
 def gui_sound():  
     Winicio.hide()
-    Wsound.showFullScreen()
-     
+    b = MusicPlayer.MusicPlayer()
+    # b.showFullScreen()
+    # Wsound.showFullScreen()
+    
     
 def gui_emocion():
-     Winicio.hide()
-     Wsound.hide()
-    #  Wemocion.show()
-    #  Wemocion.showMaximized()
-     Wemocion.showFullScreen()
+    Winicio.hide()
+    Wsound.hide()
+    Wquestions.showFullScreen()
+    # Wemocion.showFullScreen()
+    a = CoordinateApp.CoordinateApp()
+    a.showFullScreen()
     
-
+    
 # Ventana de las primeras seis preguntas 
 def gui_questions():
     Wemocion.hide()
@@ -162,8 +175,18 @@ def gui_final():
     print(cantidad_sonidos)
 
     
-         
-         
+def play_sound():
+    media_player = QMediaPlayer()
+    media_player.setVolume(50)
+    sound_file_path = 'micho.wav'  # Reemplaza "sound_file.wav" con la ubicación de tu archivo de sonido
+    media_content = QMediaContent(QUrl.fromLocalFile(sound_file_path))
+
+    
+    def play_sound():
+        print("media_content")
+        media_player.setMedia(media_content)
+        media_player.play()
+    
 
 def limpiar_cadena(cadena):
     # Convertir a minúsculas y reemplazar tildes por caracteres sin tilde
@@ -235,6 +258,10 @@ def verQuestion3():
     if button_group3.checkedButton():
         gui_final()
 
+def verSound():
+    if EndSound:
+        gui_emocion()
+
 def to_csv( nuevos_datos):
     with open("Output/data.csv", 'a', newline='') as file:
         writer = csv.writer(file)
@@ -251,7 +278,7 @@ Winicio.toolButton.clicked.connect(gui_inicio)        # me dirige a la primer pr
 
 # Boton siguiente "toolButton"
 Wsound.toolButton.clicked.connect(gui_emocion)        # me dirige a la primer pregunta
-
+Wsound.play_button.clicked.connect(play_sound)
 
 Wemocion.toolButton.clicked.connect(gui_questions) 
 

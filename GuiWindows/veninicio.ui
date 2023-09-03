@@ -72,23 +72,22 @@ E M O T I O N </string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>550</y>
-      <width>391</width>
-      <height>131</height>
+      <x>790</x>
+      <y>540</y>
+      <width>321</width>
+      <height>111</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/cct/logo.jpg);</string>
     </property>
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap>../logo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
    </widget>
-   <zorder>label</zorder>
-   <zorder>toolButton</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
