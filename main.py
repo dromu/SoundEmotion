@@ -23,13 +23,12 @@ EndSound = False
 
 app = QtWidgets.QApplication([])
 
-
 pathWindows = "GuiWindows/"
 Winicio      = uic.loadUi(pathWindows + "veninicio.ui")
 # Wsound      = uic.loadUi(pathWindows + "venSonido.ui")
-Wsound      = uic.loadUi(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\PlaySound\Reproductor.ui")
+Wsound      = uic.loadUi(r"PlaySound\Reproductor.ui")
 # Wemocion    = uic.loadUi(pathWindows + "venemoc.ui")
-Wemocion    = uic.loadUi(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\emojigrid\Emojigrid.ui")
+Wemocion    = uic.loadUi(r"emojigrid\Emojigrid.ui")
 Wquestions  = uic.loadUi(pathWindows + "venpreg.ui")
 Wquestions2  = uic.loadUi(pathWindows + "venpreg2.ui")
 Wquestions3  = uic.loadUi(pathWindows + "venpreg3.ui")
@@ -103,13 +102,21 @@ def gui_inicio():
 
     else:     
         Wfinal.hide()
-        Wsound.showFullScreen()
+        Winicio.hide()
+
+        Wquestions.showFullScreen()
+
+        a = CoordinateApp.CoordinateApp()
+        a.showFullScreen()
+        
+        b = MusicPlayer.MusicPlayer()
+        b.showFullScreen()
         
 
 def gui_sound():  
     Winicio.hide()
     b = MusicPlayer.MusicPlayer()
-    # b.showFullScreen()
+    b.showFullScreen()
     # Wsound.showFullScreen()
     
     
