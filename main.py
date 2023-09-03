@@ -173,14 +173,14 @@ def gui_final():
                   limpiar_cadena(Sbutton1D.text()), limpiar_cadena(Sbutton1E.text()), limpiar_cadena(Sbutton1F.text()),
                   limpiar_cadena(Sbutton2.text()), limpiar_cadena(Sbutton3.text())]
      
-    print(respuestas)
+    # print(respuestas)
 
     # Se guarda en un csv
     to_csv(respuestas)
 
     cantidad_sonidos = cantidad_sonidos + 1 
 
-    print(cantidad_sonidos)
+    # print(cantidad_sonidos)
 
     
 def play_sound():
@@ -275,24 +275,20 @@ def to_csv( nuevos_datos):
         writer = csv.writer(file)
         writer.writerow(nuevos_datos)
 
-    data = pd.read_csv("Output\data")
+    data = pd.read_csv("Output/data.csv")
     coordinates = pd.read_csv("coordinates.csv")
-    indice = pd.read_csv("Output\indice.csv")
+    indice = pd.read_csv("Output/indice.csv",header=None)
+    mvp1 = pd.read_csv("Input/MVP1_2019.csv",index_col=False)
 
-    dato = data.iloc[-1] #Ultimo dato guardado
-    coord = data.iloc[-1] # ultima coordenada
+    # Se transforman los datos en un serie
+    dato = data.iloc[-1][:]         #Se lee el ultimo dato
+    coord = coordinates.iloc[-1]    # SE lee las ultimas coordenas 
+    mvp1_ = mvp1.iloc[indice.iloc[0][0]][:2]
 
-    datocompleto = pd.concat([dato,coord], axis=0)
+    res = pd.concat((mvp1_, dato,coord),axis= 0)
 
-    print(datocompleto)
-   
-
-
-
-    
-
-    
-    
+    mvp1.iloc[indice.iloc[0]] = res
+    mvp1.to_csv("Input\MVP1_2019.csv",index=False)
 
 def cerrar():
      sys.exit()

@@ -38,10 +38,7 @@ class MusicPlayer(QMainWindow):
     def play_music(self):
 
         # Lectura del .CSV de los audios
-        df = pd.read_csv(r"Input\MVP1_2019.csv")
-
-        # se elige un valor aleatorio 
-       
+        df = pd.read_csv(r"Input\MVP1_2019.csv", index_col=False)       
 
         # Obtener una lista de índices que tengan el valor 0
         indices_disponibles = [i for i, valor in enumerate(df['selected']) if valor == 0]
@@ -69,8 +66,9 @@ class MusicPlayer(QMainWindow):
         # Imprimir el dataframe resultante
         print("indice aleatorio: ", indice_aleatorio)
         name = df.iloc[indice_aleatorio][1]
+        print("name: ", name)
 
-        nombre_archivo = 'Output/MVP1_2019_answer.csv'
+        nombre_archivo = 'Input/MVP1_2019.csv'
         df.to_csv(nombre_archivo, index=False)
 
          # Iniciar la reproducción del GIF
@@ -80,7 +78,7 @@ class MusicPlayer(QMainWindow):
             self.player.stop()
 
         folder_path = r"Input\MVP1_2019"
-    
+        
         track = os.path.join(folder_path, name)
         print(track)
         content = QMediaContent(QUrl.fromLocalFile(track))
