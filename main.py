@@ -12,6 +12,7 @@ from PlaySound import MusicPlayer
 from PyQt5.QtMultimedia import QSound
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtCore import QUrl
+import pandas as pd
 
 # Modificar esta variable que contiene el numero de ciclos
 total_sonidos = 2
@@ -273,8 +274,25 @@ def to_csv( nuevos_datos):
     with open("Output/data.csv", 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(nuevos_datos)
+
+    data = pd.read_csv("Output\data")
+    coordinates = pd.read_csv("coordinates.csv")
+    indice = pd.read_csv("Output\indice.csv")
+
+    dato = data.iloc[-1] #Ultimo dato guardado
+    coord = data.iloc[-1] # ultima coordenada
+
+    datocompleto = pd.concat([dato,coord], axis=0)
+
+    print(datocompleto)
+   
+
+
+
     
-    print(f'Se han agregado los datos al archivo "data datacsv"')
+
+    
+    
 
 def cerrar():
      sys.exit()

@@ -24,17 +24,17 @@
    <widget class="QLabel" name="gif_label">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>160</y>
-      <width>641</width>
-      <height>321</height>
+      <x>720</x>
+      <y>440</y>
+      <width>511</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Reproductor.gif</pixmap>
+     <pixmap>sound.gif</pixmap>
     </property>
    </widget>
    <widget class="QToolButton" name="toolButton">
@@ -60,7 +60,7 @@ background-color: rgb(170, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>910</x>
-      <y>570</y>
+      <y>690</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -75,17 +75,22 @@ background-color: rgb(0, 0, 127);</string>
      <string>Play</string>
     </property>
    </widget>
-   <widget class="QLabel" name="Texto">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>500</y>
-      <width>281</width>
-      <height>31</height>
+      <x>700</x>
+      <y>160</y>
+      <width>581</width>
+      <height>241</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 60pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>   Escucha 
+atentamente</string>
     </property>
    </widget>
   </widget>
