@@ -46,6 +46,7 @@ class MusicPlayer(QMainWindow):
         # Verificar si hay índices disponibles
         if not indices_disponibles:
             self.Texto.setText("No hay ceros en la columna.")
+            sys.exit()
         else:
             # Elegir aleatoriamente un índice de la lista de índices disponibles
             indice_aleatorio = random.choice(indices_disponibles)
@@ -80,7 +81,7 @@ class MusicPlayer(QMainWindow):
         folder_path = r"Input\MVP1_2019"
         
         track = os.path.join(folder_path, name)
-        print(track)
+        # print(track)
         content = QMediaContent(QUrl.fromLocalFile(track))
     
         try:

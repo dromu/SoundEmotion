@@ -15,7 +15,7 @@ from PyQt5.QtCore import QUrl
 import pandas as pd
 
 # Modificar esta variable que contiene el numero de ciclos
-total_sonidos = 2
+total_sonidos = 10
 
 cantidad_sonidos = 0
 #inciar la app

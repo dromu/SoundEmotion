@@ -40,7 +40,7 @@ class CoordinateApp(QMainWindow):
         if not self.clicked:  # Only allow one click
             x, y = event.pos().x(), event.pos().y()
 
-            print("x: ", self.img_width ,"y: ",self.img_height)
+            # print("x: ", self.img_width ,"y: ",self.img_height)
             normalized_x = round((x - self.img_offset_x) / self.img_width * 2 - 1, 3)
             normalized_y = round(1 - (y - self.img_offset_y) / self.img_height * 2, 3)
 
