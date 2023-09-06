@@ -11,13 +11,13 @@ class CoordinateApp(QMainWindow):
 
         self.setWindowTitle("Coordinate Axes and Drawing")
 
-        self.ventana = loadUi(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\emojigrid\Emojigrid.ui", self)  # Load the UI design
+        self.ventana = loadUi("emojigrid\Emojigrid.ui", self)  # Load the UI design
 
         self.view = self.findChild(QGraphicsView, 'view')  # Find the QGraphicsView widget by name
         self.scene = QGraphicsScene(self)
         self.view.setScene(self.scene)
 
-        self.img_inside = QPixmap(r"C:\Users\dromu\Unimayor\Urbanphony\SoundEmotion\emojigrid\EmojiGrid_inside.jpeg")
+        self.img_inside = QPixmap("emojigrid\EmojiGrid_inside.jpeg")
         self.img_inside = self.img_inside.scaled(500, 500, Qt.KeepAspectRatio)  # Resize image to 500x500 while maintaining aspect ratio
         self.scene.addPixmap(self.img_inside)
 

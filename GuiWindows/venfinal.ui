@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>960</y>
+      <y>950</y>
       <width>200</width>
       <height>70</height>
      </rect>
@@ -39,8 +39,8 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>520</y>
+      <x>550</x>
+      <y>530</y>
       <width>881</width>
       <height>71</height>
      </rect>
@@ -55,17 +55,49 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>380</y>
-      <width>711</width>
+      <x>760</x>
+      <y>370</y>
+      <width>451</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 25pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Hemos terminado, toma un descanso</string>
+     <string>Genial ¡Tarea realizada!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>430</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Solo quedan:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contador">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>450</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 22pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>aaaa</string>
     </property>
    </widget>
   </widget>

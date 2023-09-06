@@ -9,5 +9,6 @@ call %VENV_PATH%\Scripts\activate
 rem Ejecuta el programa deseado
 python main.py
 
+
 rem Desactiva el entorno virtual (opcional)
 deactivate

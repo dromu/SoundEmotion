@@ -91,7 +91,6 @@ for i in range(1,7):
 
 #Ventana de reproduccion del sonido
 
-    
 
 def gui_inicio():
     global cantidad_sonidos
@@ -155,6 +154,11 @@ def gui_final():
 
     Wquestions3.hide()
     Wfinal.showFullScreen()
+
+    df = pd.read_csv("Input\MVP1_2019.csv")
+    cantidad = len(df[df["selected"] == 0])
+
+    Wfinal.contador.setText(str(cantidad))
     
     #Se verifican todas las respuestas y se guardan
 
@@ -289,6 +293,7 @@ def to_csv( nuevos_datos):
 
     mvp1.iloc[indice.iloc[0]] = res
     mvp1.to_csv("Input\MVP1_2019.csv",index=False)
+    mvp1.to_csv("Output\MVP1_2019.csv",index=False)
 
 def cerrar():
      sys.exit()

@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>960</y>
+      <y>950</y>
       <width>200</width>
       <height>70</height>
      </rect>
@@ -36,33 +36,17 @@ background-color: rgb(170, 0, 0);</string>
      <string>Siguiente</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>200</y>
-      <width>691</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Coherencia del paisaje sonoro</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>310</y>
-      <width>991</width>
+      <x>160</x>
+      <y>390</y>
+      <width>1351</width>
       <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 25pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>¿En que medida el sonido percibido es adecuado para vivir en la ciudad?</string>
@@ -72,7 +56,7 @@ background-color: rgb(170, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -95,7 +79,7 @@ malo</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -118,7 +102,7 @@ malo</string>
     <property name="geometry">
      <rect>
       <x>720</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -141,7 +125,7 @@ malo</string>
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -164,7 +148,7 @@ bueno</string>
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -186,7 +170,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>1560</x>
-      <y>410</y>
+      <y>500</y>
       <width>200</width>
       <height>60</height>
      </rect>

@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>960</y>
+      <y>950</y>
       <width>200</width>
       <height>70</height>
      </rect>
@@ -36,33 +36,17 @@ background-color: rgb(170, 0, 0);</string>
      <string>Siguiente</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>621</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Dominancias de los sonidos</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>120</y>
-      <width>801</width>
-      <height>31</height>
+      <x>120</x>
+      <y>80</y>
+      <width>1041</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 24pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>¿En que medida percibes las siguientes fuentes de sonido?</string>
@@ -71,8 +55,8 @@ background-color: rgb(170, 0, 0);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>190</y>
+      <x>120</x>
+      <y>200</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -103,8 +87,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R2">
@@ -430,8 +414,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R2_3">
@@ -583,8 +567,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R2_4">
@@ -613,7 +597,7 @@ silencioso</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>580</y>
       <width>201</width>
       <height>21</height>
@@ -736,8 +720,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R2_5">
@@ -766,7 +750,7 @@ silencioso</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>700</y>
       <width>121</width>
       <height>21</height>
@@ -889,8 +873,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R2_6">
@@ -919,7 +903,7 @@ silencioso</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>820</y>
       <width>121</width>
       <height>21</height>
@@ -1042,8 +1026,8 @@ background-color: rgb(170, 0, 0);
 </string>
     </property>
     <property name="text">
-     <string>Inaudible
-completamente</string>
+     <string>Completamente 
+inaudible</string>
     </property>
    </widget>
   </widget>
