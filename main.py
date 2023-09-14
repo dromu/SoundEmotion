@@ -74,6 +74,13 @@ for i in range(1,7):
         button_group1F.addButton(button)
         button.setChecked(False) 
 
+button_group1G = QButtonGroup()
+for i in range(1,7):
+        button = getattr(Wquestions, f"R{i}_7")
+        button_group1G.addButton(button)
+        button.setChecked(False) 
+
+
 # SE agrega a un grupo la segundas respuestas 
 button_group2 = QButtonGroup()
 for i in range(1,7):
@@ -155,7 +162,7 @@ def gui_final():
     Wquestions3.hide()
     Wfinal.showFullScreen()
 
-    df = pd.read_csv("Input\MVP1_2019.csv")
+    df = pd.read_csv("Input\data_completa.csv")
     cantidad = len(df[df["selected"] == 0])
 
     Wfinal.contador.setText(str(cantidad))
@@ -168,6 +175,7 @@ def gui_final():
     Sbutton1D = button_group1D.checkedButton()
     Sbutton1E = button_group1E.checkedButton()
     Sbutton1F = button_group1F.checkedButton()
+    Sbutton1G = button_group1G.checkedButton()
     Sbutton2  = button_group2.checkedButton()
     Sbutton3  = button_group3.checkedButton()
 
@@ -175,7 +183,7 @@ def gui_final():
     # Se limpian las respuestas para que no tengan simbolos extraños
     respuestas = [limpiar_cadena(Sbutton1A.text()), limpiar_cadena(Sbutton1B.text()), limpiar_cadena(Sbutton1C.text()),
                   limpiar_cadena(Sbutton1D.text()), limpiar_cadena(Sbutton1E.text()), limpiar_cadena(Sbutton1F.text()),
-                  limpiar_cadena(Sbutton2.text()), limpiar_cadena(Sbutton3.text())]
+                  limpiar_cadena(Sbutton1G.text()), limpiar_cadena(Sbutton2.text()), limpiar_cadena(Sbutton3.text())]
      
     # print(respuestas)
 
@@ -240,6 +248,10 @@ def clear_selection():
     button_group1F.setExclusive(False)
     button_group1F.checkedButton().setChecked(False)
     button_group1F.setExclusive(True)
+
+    button_group1G.setExclusive(False)
+    button_group1G.checkedButton().setChecked(False)
+    button_group1G.setExclusive(True)
     
     button_group2.setExclusive(False)
     button_group2.checkedButton().setChecked(False)
@@ -256,9 +268,10 @@ def verQuestion1():
     D1 = button_group1D.checkedButton()
     E1 = button_group1E.checkedButton()
     F1 = button_group1F.checkedButton()
+    G1 = button_group1G.checkedButton()
 
     #Si todos los grupos tienen un respuesta, se puede cambiar a la siguiente pregunta 
-    if (A1 and B1 and C1 and D1 and E1 and F1):
+    if (A1 and B1 and C1 and D1 and E1 and F1 and G1):
         Wquestions.toolButton.setEnabled(True)
         gui_questions2()
 
@@ -282,7 +295,7 @@ def to_csv( nuevos_datos):
     data = pd.read_csv("Output/data.csv")
     coordinates = pd.read_csv("coordinates.csv")
     indice = pd.read_csv("Output/indice.csv",header=None)
-    mvp1 = pd.read_csv("Input/MVP1_2019.csv",index_col=False)
+    mvp1 = pd.read_csv("Input\data_completa.csv",index_col=False)
 
     # Se transforman los datos en un serie
     dato = data.iloc[-1][:]         #Se lee el ultimo dato
@@ -292,8 +305,8 @@ def to_csv( nuevos_datos):
     res = pd.concat((mvp1_, dato,coord),axis= 0)
 
     mvp1.iloc[indice.iloc[0]] = res
-    mvp1.to_csv("Input\MVP1_2019.csv",index=False)
-    mvp1.to_csv("Output\MVP1_2019.csv",index=False)
+    mvp1.to_csv("Input\data_completa.csv",index=False)
+    mvp1.to_csv("Output\data_completa.csv",index=False)
 
 def cerrar():
      sys.exit()

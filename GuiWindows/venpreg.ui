@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>950</y>
+      <y>940</y>
       <width>200</width>
       <height>70</height>
      </rect>
@@ -40,7 +40,7 @@ background-color: rgb(170, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>80</y>
+      <y>50</y>
       <width>1041</width>
       <height>61</height>
      </rect>
@@ -56,7 +56,7 @@ background-color: rgb(170, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>200</y>
+      <y>140</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -72,7 +72,7 @@ background-color: rgb(170, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -95,7 +95,7 @@ inaudible</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -130,7 +130,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -165,7 +165,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -200,7 +200,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -234,7 +234,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>230</y>
+      <y>170</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -269,7 +269,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -292,7 +292,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>320</y>
+      <y>250</y>
       <width>271</width>
       <height>31</height>
      </rect>
@@ -308,7 +308,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -331,7 +331,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -354,7 +354,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -377,7 +377,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -399,7 +399,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>360</y>
+      <y>290</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -422,7 +422,7 @@ inaudible</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -445,7 +445,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>450</y>
+      <y>370</y>
       <width>261</width>
       <height>31</height>
      </rect>
@@ -461,7 +461,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -484,7 +484,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -507,7 +507,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -530,7 +530,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -552,7 +552,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>490</y>
+      <y>410</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -575,7 +575,7 @@ inaudible</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -598,7 +598,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>580</y>
+      <y>490</y>
       <width>201</width>
       <height>21</height>
      </rect>
@@ -614,7 +614,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -637,7 +637,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -660,7 +660,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -683,7 +683,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -705,7 +705,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>610</y>
+      <y>520</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -728,7 +728,7 @@ inaudible</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -751,7 +751,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>700</y>
+      <y>600</y>
       <width>121</width>
       <height>21</height>
      </rect>
@@ -767,7 +767,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -790,7 +790,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -813,7 +813,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -836,7 +836,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -858,7 +858,7 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>730</y>
+      <y>630</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -881,7 +881,7 @@ inaudible</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>850</y>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -904,7 +904,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>820</y>
+      <y>710</y>
       <width>121</width>
       <height>21</height>
      </rect>
@@ -920,7 +920,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>850</y>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -943,7 +943,7 @@ silencioso</string>
     <property name="geometry">
      <rect>
       <x>1520</x>
-      <y>850</y>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -966,7 +966,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>850</y>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -989,7 +989,7 @@ ruidoso</string>
     <property name="geometry">
      <rect>
       <x>960</x>
-      <y>850</y>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -1011,6 +1011,29 @@ background-color: rgb(170, 0, 0);
     <property name="geometry">
      <rect>
       <x>120</x>
+      <y>740</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Completamente 
+inaudible</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R1_7">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
       <y>850</y>
       <width>200</width>
       <height>60</height>
@@ -1028,6 +1051,136 @@ background-color: rgb(170, 0, 0);
     <property name="text">
      <string>Completamente 
 inaudible</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>820</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sociable</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R3_7">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Ligeramente 
+silencioso</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R2_7">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Relativamente 
+silencioso</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R4_7">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Ligeramente 
+ruidoso</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R5_7">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Moderadamente</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="R6_7">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>850</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+text-align:center;
+selection-background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Relativamente 
+ruidoso</string>
     </property>
    </widget>
   </widget>
