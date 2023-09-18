@@ -164,8 +164,10 @@ def gui_final():
 
     df = pd.read_csv("Input\data_completa.csv")
     cantidad = len(df[df["selected"] == 0])
+    
+    TotalCant = cantidad - 1 
 
-    Wfinal.contador.setText(str(cantidad))
+    Wfinal.contador.setText(str(TotalCant))
     
     #Se verifican todas las respuestas y se guardan
 
@@ -293,7 +295,7 @@ def to_csv( nuevos_datos):
         writer.writerow(nuevos_datos)
 
     data = pd.read_csv("Output/data.csv")
-    coordinates = pd.read_csv("coordinates.csv")
+    coordinates = pd.read_csv("Output/coordinates.csv")
     indice = pd.read_csv("Output/indice.csv",header=None)
     mvp1 = pd.read_csv("Input\data_completa.csv",index_col=False)
 

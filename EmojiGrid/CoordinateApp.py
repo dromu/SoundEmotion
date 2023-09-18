@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QGraphicsScene, QGraphics
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt, QPointF
 from PyQt5.uic import loadUi
+import numpy as np
 
 class CoordinateApp(QMainWindow):
     def __init__(self):
@@ -17,21 +18,23 @@ class CoordinateApp(QMainWindow):
         self.scene = QGraphicsScene(self)
         self.view.setScene(self.scene)
 
-        self.img_inside = QPixmap("emojigrid\EmojiGrid_inside.png")
+        # self.img_inside = QPixmap("emojigrid\EmojiGrid_inside.png")
+
+        
         # self.img_inside = self.img_inside.scaled(500, 500, Qt.KeepAspectRatio)  # Resize image to 500x500 while maintaining aspect ratio
         # self.scene.addPixmap(self.img_inside)
 
-        # self.img_offset_x = self.view.width() / 2 - self.img_inside.width() / 2
-        # self.img_offset_y = self.view.height() / 2 - self.img_inside.height() / 2
-        # self.img_width = self.img_inside.width()
-        # self.img_height = self.img_inside.height()
+        self.img_offset_x = 550 / 2 - 550 / 2
+        self.img_offset_y = 550 / 2 - 550 / 2
+        self.img_width = 550
+        self.img_height = 550
 
-        self.view.setSceneRect(0, 0, self.img_inside.width(), self.img_inside.height())
+        self.view.setSceneRect(0, 0, self.img_width, self.img_height)
         self.view.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.view.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.view.mousePressEvent = self.draw_circle
 
-        self.coordinates_file = 'coordinates.csv'
+        self.coordinates_file = 'Output/coordinates.csv'
         self.clicked = False  # Track if a click has been made
 
         self.toolButton.clicked.connect(self.salto)
@@ -47,6 +50,8 @@ class CoordinateApp(QMainWindow):
             ellipse = QGraphicsEllipseItem(x - 10, y - 10, 20, 20)
             ellipse.setBrush(Qt.red)
             self.scene.addItem(ellipse)
+
+            print(normalized_x, normalized_y)
 
             self.save_coordinates(normalized_x, normalized_y)
             self.clicked = True  # Mark that a click has been made3
@@ -68,9 +73,6 @@ def run():
     window = CoordinateApp()
     window.show()
     sys.exit(app.exec_())
-
- 
-  
 
 if __name__ == '__main__':
     run()

@@ -45,7 +45,7 @@ class MusicPlayer(QMainWindow):
 
         # Verificar si hay índices disponibles
         if not indices_disponibles:
-            self.Texto.setText("No hay ceros en la columna.")
+            # self.Texto.setText("No hay ceros en la columna.")
             sys.exit()
         else:
             # Elegir aleatoriamente un índice de la lista de índices disponibles
