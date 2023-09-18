@@ -52,7 +52,7 @@ class MusicPlayer(QMainWindow):
             indice_aleatorio = random.choice(indices_disponibles)
 
         # Cambiar el valor en el índice aleatorio de 0 a 1
-        df.at[indice_aleatorio, 'selected'] = 1
+        # df.at[indice_aleatorio, 'selected'] = 1
 
 
         # Guardamos ese indice
@@ -69,8 +69,8 @@ class MusicPlayer(QMainWindow):
         name = df.iloc[indice_aleatorio][1]
         print("name: ", name)
 
-        nombre_archivo = 'Input/data_completa.csv'
-        df.to_csv(nombre_archivo, index=False)
+        # nombre_archivo = 'Input/data_completa.csv'
+        # df.to_csv(nombre_archivo, index=False)
 
          # Iniciar la reproducción del GIF
         self.gif_movie.start()

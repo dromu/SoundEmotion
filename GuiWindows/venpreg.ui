@@ -760,7 +760,7 @@ silencioso</string>
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Biofonía</string>
+     <string>Biofonías</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R3_5">
@@ -1066,7 +1066,7 @@ inaudible</string>
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Sociable</string>
+     <string>Sociales</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="R3_7">

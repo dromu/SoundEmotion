@@ -17,14 +17,14 @@ class CoordinateApp(QMainWindow):
         self.scene = QGraphicsScene(self)
         self.view.setScene(self.scene)
 
-        self.img_inside = QPixmap("emojigrid\EmojiGrid_inside.jpeg")
-        self.img_inside = self.img_inside.scaled(500, 500, Qt.KeepAspectRatio)  # Resize image to 500x500 while maintaining aspect ratio
-        self.scene.addPixmap(self.img_inside)
+        self.img_inside = QPixmap("emojigrid\EmojiGrid_inside.png")
+        # self.img_inside = self.img_inside.scaled(500, 500, Qt.KeepAspectRatio)  # Resize image to 500x500 while maintaining aspect ratio
+        # self.scene.addPixmap(self.img_inside)
 
-        self.img_offset_x = self.view.width() / 2 - self.img_inside.width() / 2
-        self.img_offset_y = self.view.height() / 2 - self.img_inside.height() / 2
-        self.img_width = self.img_inside.width()
-        self.img_height = self.img_inside.height()
+        # self.img_offset_x = self.view.width() / 2 - self.img_inside.width() / 2
+        # self.img_offset_y = self.view.height() / 2 - self.img_inside.height() / 2
+        # self.img_width = self.img_inside.width()
+        # self.img_height = self.img_inside.height()
 
         self.view.setSceneRect(0, 0, self.img_inside.width(), self.img_inside.height())
         self.view.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
@@ -56,9 +56,6 @@ class CoordinateApp(QMainWindow):
         if self.clicked == True:
             self.ventana.hide()
 
-        
-
-        
     
     def save_coordinates(self, x, y):
     # Append new coordinate to the existing file
@@ -66,11 +63,15 @@ class CoordinateApp(QMainWindow):
             writer = csv.writer(file)
             writer.writerow([x, y])   
 
-# def run():
-#     window = CoordinateApp()
-#     window.showFullScreen()
+def run():
+    app = QApplication(sys.argv)
+    window = CoordinateApp()
+    window.show()
+    sys.exit(app.exec_())
+
+ 
   
 
-# if __name__ == '__main__':
-#     run()
+if __name__ == '__main__':
+    run()
     

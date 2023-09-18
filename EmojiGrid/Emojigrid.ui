@@ -33,16 +33,16 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>EmojiGrid_outside.jpeg</pixmap>
+     <pixmap>../../../../Downloads/osfstorage-archive/png/EmojiGrid_outside.png</pixmap>
     </property>
    </widget>
    <widget class="QGraphicsView" name="view">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>310</y>
-      <width>500</width>
-      <height>500</height>
+      <x>688</x>
+      <y>284</y>
+      <width>550</width>
+      <height>550</height>
      </rect>
     </property>
    </widget>
@@ -82,6 +82,10 @@ background-color: rgb(170, 0, 0);</string>
 refleje tu estado emocional respecto al sonido escuchado</string>
     </property>
    </widget>
+   <zorder>label</zorder>
+   <zorder>toolButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>view</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -95,6 +99,8 @@ refleje tu estado emocional respecto al sonido escuchado</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="data.qrc"/>
+ </resources>
  <connections/>
 </ui>

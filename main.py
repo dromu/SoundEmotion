@@ -297,6 +297,9 @@ def to_csv( nuevos_datos):
     indice = pd.read_csv("Output/indice.csv",header=None)
     mvp1 = pd.read_csv("Input\data_completa.csv",index_col=False)
 
+    # mvp1.at[int(indice.iloc[0]), 'selected'] = 1
+    mvp1['selected'].iloc[indice.iloc[0]] = 1
+
     # Se transforman los datos en un serie
     dato = data.iloc[-1][:]         #Se lee el ultimo dato
     coord = coordinates.iloc[-1]    # SE lee las ultimas coordenas 
