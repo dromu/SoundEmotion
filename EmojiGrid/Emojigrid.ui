@@ -74,9 +74,9 @@ refleje tu estado emocional respecto al sonido escuchado</string>
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>220</y>
+      <y>210</y>
       <width>731</width>
-      <height>691</height>
+      <height>711</height>
      </rect>
     </property>
     <property name="text">
